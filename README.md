@@ -27,9 +27,9 @@ The program mainly does two things.
 1.	START
 2.	insert message ,img_file and result_img_name
 3.	append “END” as delimiter 
-4.	for each char m in message:
+4.	for each char m in message
 5.	        convert m into binary b_m
-6.	        for each b in b_m:
+6.	        for each b in b_m
 7.	             get the last modified pixel of img
 8.	             modify the pixel with b
 9.	             increment the pixel and b
@@ -38,12 +38,12 @@ The program mainly does two things.
 Decoding:
 1.	START
 2.	insert the img_file 
-3.	while img_size:
+3.	while img_size
 4.	      get the pixel of img
 5.	      convert into binary and store it in a list
-6.	      if list size becomes 7: 
+6.	      if list size becomes 7
 7.	                convert 7 binary into char and store it in list m_store
-8.	                if last 3 element of m_store is “END”:
+8.	                if last 3 element of m_store is “END”
 9.	                      return the string
 10.	                
 11.	END
